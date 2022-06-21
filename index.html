@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+
+<head>
+ 
+    
+    
+<title> Personal Info</title>
+<link rel="stylesheet" href="style.css">
+<script src="javascriptf.js">  
+</script>  
+</head>
+ <body onload="createCaptcha()">
+ <h1>LOAN Application form</h1>
+ <h3>Personal Info</h3>
+<div class="form1">
+  <form name="myform" method="post" action="thankyou.html"  target="_blank" onsubmit=" return thank();">
+<fieldset>
+<div class="next">
+ <p>
+ <label>Fullname : <input name="fullname" required></label>
+ </p>
+ <p>
+ <label>Email : <input type="email"  name="email" required></label>
+  </p>
+
+
+<p><label>PAN:<input name="PANCard" type="text" id="txtPANCard"  pattern="[A-Z0-9]+" required></label>
+
+
+</p>
+<p><label>LoanAmount:<input  type="tel"  maxlength="9"></p>
+
+ <p>
+<div id="captcha">
+    </div>
+    <input type="text" placeholder="Captcha" id="cpatchaTextBox"/>
+    <button type="submit">Clear</button>
+  
+</p>
+</div>
+<p>
+<a  href="thankyou.html"></a>
+ <input type="button" value="submit"  id="submit" name="submit" onclick="Validateform()"  >
+  </p>
+
+
+
+  </fieldset>
+  </form>
+</div>
+
+</body>
+</html>
